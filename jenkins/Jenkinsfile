@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        npm 'node12'
+    }
     environment {
         CI = 'true'
     }
